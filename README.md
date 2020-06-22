@@ -1,5 +1,5 @@
 # Pixelator
-##Use Example
+## Use Example
 ```
 #First use Pixelator with image location
 pix = Pixelator('C:/Users/meste/Desktop/test4.jpg')
