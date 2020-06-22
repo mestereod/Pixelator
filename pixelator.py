@@ -1,3 +1,4 @@
+  
 import sys
 import numpy as np
 import os
@@ -67,15 +68,3 @@ class Pixelator:
             new_im.show()
         else:
             image.save(outputPath)
-        
-pix = Pixelator('C:/Users/meste/Desktop/test4.jpg')
-n_cores = 898
-pixel_intensidade = 7
-
-#primeiro aumenta o tamanho de pixeis para depois comprimir cores
-imagem_pixel = pix.pixelate(pix.original(), pixel_intensidade)
-imagem_kmeans = pix.kMeansCompress(imagem_pixel, n_cores)
-#pix.show(imagem_kmeans)
-
-pix.save(imagem_kmeans, 'C:/Users/meste/Desktop/out.png', True)
-
